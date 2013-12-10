@@ -11,7 +11,7 @@
         <meta name="viewport" content="width=device-width">
 
         <link rel="stylesheet" href="css/bootstrap.min.css">        
-        <link rel="stylesheet" href="css/bootstrap-responsive.min.css">
+        <!-- <link rel="stylesheet" href="css/bootstrap-responsive.min.css"> -->
         <link rel="stylesheet/less" type="text/css" href="less/main.less" />
 
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
@@ -23,54 +23,233 @@
 
         <!-- This code is taken from http://twitter.github.com/bootstrap/examples/hero.html -->
 
-        <div class="navbar navbar-inverse navbar-fixed-top">
-            <div class="navbar-inner">
-                <div class="container">
-                    <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </a>
-                    <a class="brand" href="#">Project name</a>
-                    <div class="nav-collapse collapse">
-                        <ul class="nav">
-                            <li class="active"><a href="#">Home</a></li>
-                            <li><a href="#about">About</a></li>
-                            <li><a href="#contact">Contact</a></li>
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="#">Action</a></li>
-                                    <li><a href="#">Another action</a></li>
-                                    <li><a href="#">Something else here</a></li>
-                                    <li class="divider"></li>
-                                    <li class="nav-header">Nav header</li>
-                                    <li><a href="#">Separated link</a></li>
-                                    <li><a href="#">One more separated link</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div><!--/.nav-collapse -->
-                </div>
+        <div id="cabecalho">
+
+            <a class="logo" href="#cabecalho">Praça Camp</a>
+
+            <div id="menu-principal">
+                <div class="fita-ponta fita-esq"></div>
+                <ul id="navMenu">
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#local">Local</a></li>
+                    <li><a href="#creditos">Créditos</a></li>
+                </ul>
+                <div class="fita-ponta fita-dir"></div>
             </div>
+
         </div>
 
         <div class="container">
 
+            <div id="destaque" class="page">
+
+                <div class="slideshow">
+                    <img src="img/banner.png" id="foto-1" />
+                </div>
+
+                <div class="legenda" id="legenda-1">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent augue dui, vehicula in tempor ac, aliquet nec lorem. Maecenas et magna non justo eleifend sodales.
+                </div>
+
+                <a href="#" class="botao botao_anterior">Voltar</a>
+                <a href="#" class="botao botao_proximo">Próximo</a>
+
+            </div><!-- #destaque -->
+
+
+            <div id="sobre" class="page noView">
+
+                <div class="titulo">
+                    <div class="fita-ponta fita-esq"></div>
+                    <h2>Sobre o evento</h2>
+                </div>
+
+                <div class="caixa">
+                    <p>Com o fim do último semestre de cursos da Praça do Conhecimento - Alemão, será realizado o Praça Camp. Um evento gratuito que tem a intenção de apresentar os projetos realizados pelas turmas de cada curso, sendo eles: Web Design, Design Gráfico, Computação Gráfica, Audio, Tecnologia da Informação (TI), Fotografia, Vídeo e Inglês. Além das apresentações especiais organizadas pela Oficina da Palavra, que, juntos com os alunos, montaram uma rádio-novela. O evento é gratuito e acontecerá no dia 10 de dezembro de 2013 (terça-feira) a partir das 10 horas da manhã, na Praça do Conhecimento em Nova Brasília.</p>
+
+                    <img src="img/foto-praca.png" />
+                </div>
+
+            </div><!-- #sobre -->
+
+
+
+            <div id="projetos" class="page noView">
+
+                <div class="titulo">
+                    <div class="fita-ponta fita-esq"></div>
+                    <h2>Projetos</h2>
+                </div>
+
+                <div class="conteudo">
+
+                    <div class="caixa">
+                        <p>A Praça do Conhecimento oferece cursos semestrais regulares em dois turnos para a formação técnica nas áreas de tenologia. Após três meses e meio de aula, as turmas montaram um "projeto final" para apresentar no Praça Camp. Confira o que vai rolar!</p>
+                        <div class="clear"></div>
+                    </div>
+
+                    <div id="grid" >
+
+                        <div class="projeto">
+                            <img src="img/ico-audio.png" class="icone" />
+                            <div class="legenda">
+                                <h4>Áudio Digital</h4>
+                                Falando um pouco sobre o projeto
+                            </div>
+                        </div><!-- projeto -->
+
+                        <div class="projeto">
+                            <img src="img/ico-cg.png" class="icone" />
+                            <div class="legenda">
+                                <h4>Computação Gráfica</h4>
+                                Falando um pouco sobre o projeto
+                            </div>
+                        </div><!-- projeto -->
+
+                        <div class="projeto noBorderRight">
+                            <img src="img/ico-design.png" class="icone" />
+                            <div class="legenda">
+                                <h4>Design Gráfico</h4>
+                                Falando um pouco sobre o projeto
+                            </div><!-- projeto -->
+                        </div>  
+
+                        <div class="projeto ">
+                            <img src="img/ico-informatica.png" class="icone" />
+                            <div class="legenda">
+                                <h4>Informatica</h4>
+                                Falando um pouco sobre o projeto
+                            </div><!-- projeto -->
+                        </div>
+
+                        <div class="projeto ">
+                            <img src="img/ico-fotografia.png" class="icone" />
+                            <div class="legenda">
+                                <h4>Fotografia</h4>
+                                Falando um pouco sobre o projeto
+                            </div><!-- projeto -->
+                        </div>  
+
+                        <div class="projeto noBorderRight">
+                            <img src="img/ico-ingles.png" class="icone" />
+                            <div class="legenda">
+                                <h4>Inglês</h4>
+                                Falando um pouco sobre o projeto
+                            </div><!-- projeto -->
+                        </div>     
+
+                        <div class="projeto ">
+                            <img src="img/ico-video.png" class="icone" />
+                            <div class="legenda">
+                                <h4>Vídeo</h4>
+                                Falando um pouco sobre o projeto
+                            </div><!-- projeto -->
+                        </div>
+
+                        <div class="projeto ">
+                            <img src="img/ico-web.png" class="icone" />
+                            <div class="legenda">
+                                <h4>Web Design</h4>
+                                Falando um pouco sobre o projeto
+                            </div><!-- projeto -->
+                        </div>  
+
+                    </div><!-- grid -->
+
+                </div><!-- conteudo -->
+
+                <div class="clear"></div>
+
+            </div><!-- #projetos -->
+
+
+
+            <div id="local" class="page noView">
+
+                <div class="descricao">
+                    <h3>Como chegar?</h3>
+
+                    <p>A Praça de Conhecimento está localizada na Praça do Terço ao lado do CineCarioca, próximo a quadra da Nova Brasília, no Complexo do Alemão.</p>
+
+                    <p>O acesso é pela Rua Nova Brasília, na altura do número 1.919, da Avenida Itaóca, em Inhaúma, zona norte do Rio de Janeiro.</p>
+
+                    <p><a href="http://goo.gl/maps/YLuW4" target="_blank">Clique aqui para abrir o mapa</a></p>
+                </div>
+
+
+            </div><!-- #local -->
+
+
+            <div id="creditos" class="page noView">
+
+                <div class="titulo">
+                    <div class="fita-ponta fita-esq"></div>
+                    <h2>Quem fez?</h2>
+                </div>     
+
+                <div class="coluna">
+                    <div class="descricao">
+                        <h4>Criadores do site</h4>
+                        Vinicius<br>
+                        Hefrain Lucas<br>
+                        Iury<br>
+                        Thales<br>
+                        Lucas<br>
+                        Bianca<br>
+                        Amanda<br>
+                        Juliana<br>
+                        Ivan<br>
+                        <br>
+                        Criado e desenvolvido pelos alunas da <strong>Praça do Conhecimento Nova Brasília</strong>
+                    </div>
+                    <img src="img/creditos-base.png" width="270" />
+                </div>  
+
+                <div class="foto coluna">
+                    <img src="img/fotoGalera.png" />
+
+                </div>
+
+                <div class="clear"></div>
+
+            </div><!-- #creditos -->
+
+            <div class="clear"></div>
+
         </div> <!-- /container -->
+
+
+
+        <div id="rodape">
+
+            <div class="faixa">                
+                <div class="faixa-rodape"></div>                
+            </div>
+
+        </div><!-- #rodape -->
+
+
+
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
 
         <script src="js/vendor/bootstrap.min.js"></script>
         <script type="text/javascript" src="js/less.min.js"></script>
+        <script type="text/javascript" src="js/vendor/jquery.scrollTo-1.4.3.1-min.js"></script>   
+        <script type="text/javascript" src="js/vendor/jquery.inview.js"></script>   
+        <script type="text/javascript" src="js/vendor/jquery.localscroll-1.2.7-min.js"></script>   
+        
         <script src="js/main.js"></script>
 
         <script>
+            /* 
             var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
             (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
             g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
             s.parentNode.insertBefore(g,s)}(document,'script'));
+            */
         </script>
     </body>
 </html>
